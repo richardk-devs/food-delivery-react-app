@@ -1,0 +1,165 @@
+.cart {
+  width: 90%;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.cart h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.empty {
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.cart-table-container {
+  max-height: 400px;  
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+
+.cart-table-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cart-table-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.cart-table-container::-webkit-scrollbar-track {
+  background: #f3f3f3;
+}
+
+.cart-table-container {
+  overflow-x: auto;
+}
+
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.cart-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.qty-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-buttons button {
+  background: tomato;
+  border: none;
+  padding: 6px 10px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.delete-btn {
+  background: red;
+  border: none;
+  color: white;
+  padding: 7px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cart-summary-box {
+  max-width: 456px;
+  margin-left: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #f9f9f9;
+}
+
+.summary-row,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.coupon-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.coupon-box input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+}
+
+.coupon-box button {
+  background: orange;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.checkout-btn {
+  width: 100%;
+  margin-top: 20px;
+  background: green;
+  padding: 12px 20px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.checkout-btn:hover{
+  background-color: white;
+  color: blue;
+  border:1px solid #ef4444;
+}
+
+
+@media (max-width: 768px) {
+  .cart-table th:nth-child(2),
+  .cart-table td:nth-child(2) {
+    display: none;
+  }
+
+  .cart-summary-box {
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+  }
+}

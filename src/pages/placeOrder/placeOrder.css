@@ -1,0 +1,148 @@
+.place-order {
+  width: 100%;
+  padding: 40px 5%;
+  background: #fafafa;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.order-container {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.order-left {
+  width: 55%;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(243, 232, 232, 0.08);
+}
+
+.order-left h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.delivery-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.delivery-form input,
+.delivery-form textarea {
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+}
+.delivery-form :hover{
+    border: 2px solid #ef4444;
+}
+
+
+.order-right {
+  width: 40%;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.order-right h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.summary-list{
+    max-height:280px;
+    overflow-y: auto ;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    height: 75px;
+}
+.summary-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.summary-item> div{
+    margin-left: 12px;
+    overflow: hidden;
+    flex: 1;
+
+}
+
+.summary-item h4{
+    font-size: 15px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.summary-item span{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.price-box {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.total {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.checkout-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  background: tomato;
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  background: rgb(255, 75, 47);
+}
+
+
+@media (max-width: 900px) {
+  .order-container {
+    flex-direction: column;
+  }
+  .order-left, .order-right {
+    width: 100%;
+  }
+}

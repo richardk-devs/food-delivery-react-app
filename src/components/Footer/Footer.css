@@ -1,0 +1,142 @@
+.footer {
+  background-color: #111827;
+  color: #f3f4f6;
+  padding: 60px 8% 20px 8%;
+  font-family: Arial, sans-serif;
+  
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 50px;
+  
+}
+
+
+.footer-about {
+  flex: 1 1 250px;
+}
+
+.footer-about .footer-logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+.footer-links {
+  flex: 1 1 150px;
+}
+
+.footer-links h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-links ul li:hover {
+  color: #2563eb;
+}
+
+
+.footer-newsletter {
+  flex: 1 1 250px;
+}
+
+.footer-newsletter h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #1e40af;
+}
+
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer-social span:hover {
+  color: #2563eb;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  border-top: 1px solid #374151;
+  padding-top: 15px;
+}
+
+.footer-content-right h4{
+     font-size: 18px;
+     margin-bottom: 15px;
+}
+.footer-content-right ul li{
+  list-style: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+.footer-content-right ul li:hover {
+  color:#2563eb ;
+}
+
+
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .newsletter-form {
+    flex-direction: column;
+  }
+  .newsletter-form button {
+    width: 100%;
+  }
+}
